@@ -163,7 +163,21 @@ body, html {
   flex-basis: 40%;
 }
 
-
+.flex9 {
+  display: flex;
+  flex-wrap: wrap;/* по умолчанию nowrap, если уберем то все ячейки постараются разместится в одну строку*/
+}
+.item9 {
+  background-color: #12c0dd;
+  font-size: 1.5em;
+  padding: 0.5em;
+  margin: 5px;
+  text-align:center;
+  flex-basis: 25%;
+}
+.active9 {
+	order: -1; /* встает в начало ряда, по умолчанию 0, если поставим 1 то он встанет в конец ряда ведь по умолчанию все 0*/
+}
 
 
 
