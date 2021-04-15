@@ -10,12 +10,9 @@ body {
 	background-color: #424242;
 }
 
-
+/*------------------------------------------------------------ Новая редакция--------------------------------------------*/
 	
-	
-	/*------------------------------------------------------------ Новая редакция--------------------------------------------*/
-	
-	.select-container {
+    .select-container {
 		margin-left: 58px;
 	    margin-top: 70px;
 	}
@@ -45,7 +42,7 @@ body {
 		margin-top: 3px;
 		
     }
-	@media (min-width: 640px){
+	
        .choices__list--dropdown .choices__item--selectable {
            padding-right: 5px; 
       }
@@ -84,10 +81,78 @@ body {
 		border-top: none;
 		top: 86%;
 		width: 99%;
-	}
-  
+	} 
+/*------------------------------------------------------------ Новая редакция--------------------------------------------*/  
 	
+.header-bottom-list	{
+	padding: 0;
+	margin-left: 58px;
+	margin-top: 70px;
+	list-style-type: none;
+}
+
+.ui-widget {
+    font-size: 18px;
+    line-height: 25px;
 	
+}
+.ui-selectmenu-button.ui-button {
+    width: 115px; 
+	color: #fff;
+	border: 0;
+	text-align: center;
+	background-color: transparent
+	
+}
+
+.ui-selectmenu-button.ui-button:hover {
+	background-color: transparent;
+	color: #fff;
+	border: 2px solid #7943A4;
+	outline: none;
+}
+.ui-button::after:focus {
+	border-style: solid;
+    border-color: transparent #9D5CD0  #9D5CD0 transparent;
+    
+}
+.ui-selectmenu-button.ui-button:focus {
+	background-color: transparent;
+	color: #9D5CD0;
+	border: 0;
+	outline: none;
+}
+.ui-selectmenu-button.ui-button:active {
+	background-color: transparent;
+	color: #9D5CD0;
+	border: 0;
+	outline: none;
+}
+/* .ui-button:hover, .ui-button:focus {
+    border: 0;
+    color: #fff;
+    
+} */
+
+.ui-button::after {
+    content: '';
+    position: absolute;
+    color: #fff;
+    height: 8px;
+    width: 8px;
+    border-style: solid;
+    border-color: transparent #fff #fff transparent;
+    border-width: 1px;
+    right: 31px;
+    top: 37%;
+    margin-top: -2.5px;
+    transform: rotate(45deg);
+}
+.ui-selectmenu-icon.ui-icon {
+    margin-top: 5px;
+}
+
+
 	
 
 

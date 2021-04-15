@@ -9,11 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="choices.min.css">
+  <link rel="stylesheet" href="jquery-ui.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
   <body>
     <div class="container">
-		  <div class="select-container">
+		   <!-- <div class="select-container">
         <select name="select">
             <option value="">Материал</option>
             <option value="">Древесина</option>
@@ -23,14 +24,32 @@
             <option value="">Композитный</option>
             <option value="">Гипс</option>
         </select>
+      </div>  -->
+      <div class="header-bottom-list">
+        <select name="select" id="files">
+          <option>Реализм</option>
+          <option>Тинторето</option>
+          <option>Фридрих</option>
+          <option>Леонардо</option>
+          <option>Верроккьо</option>
+        </select>
       </div>
 	  </div>
-    <script src="choices.min.js"></script>
+
+    <!-- <script src="choices.min.js"></script>
     <script>
       const element = document.querySelector('select');
       const choices = new Choices(element, {
         searchEnabled: false
       });
+    </script> -->
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="jquery-ui.min.js"></script> 
+  <script>
+    $( function() {
+      $( "#files" ).selectmenu();
+    } );
     </script>
   </body>
 </html>

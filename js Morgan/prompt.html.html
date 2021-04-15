@@ -1,0 +1,36 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Цвет ссылок</title>
+  <style>
+   a {
+    color: #008; /* Цвет текста */
+    background: #ffc; /* Цвет фона */
+    padding: 2px; /* Поля вокруг текста */
+    transition: 1s linear; /* Время изменения */
+   }
+   a:hover {
+    color: #fff; /* Цвет текста */
+    background: #008; /* Цвет фона */
+   }
+  </style>
+ </head>
+ <body>
+  <p>Для сборки <a href="megadroid.html">мегадроида</a> требуется
+  открыть коробку, достать мешочек с микросхемами и сложить их в нужном порядке,
+  пользуясь нашим подробным 8631-страничным
+  <a href="manual.html">руководством</a>.</p>
+  <script>
+    var name = prompt ("Как вас зовут?");
+	console.log("Привет, " + name);
+	
+	var likesCats = confirm("Тебе нравятся кошки?");
+	if (likesCats) {
+	console.log("Ты класная кошка!");
+	} else {
+	  console.log("Что ж, не проблема. Все равно ты молодец!");
+	}
+	alert("JavaScript это здорово!")
+  </script>
+ </body>
+</html>
