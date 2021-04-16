@@ -151,6 +151,14 @@ body {
 .ui-selectmenu-icon.ui-icon {
     margin-top: 5px;
 }
+.ui-button:hover {
+   
+    
+    
+}
+.ui-selectmenu-button.ui-button:active {
+	border-color: transparent #9D5CD0 #9D5CD0 transparent;
+}
 
 
 	
