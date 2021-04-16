@@ -1,0 +1,96 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Собутыльник</title>
+  <style>
+   h1,
+   h2   {
+    margin: 400px 550px;
+    color: #008; /* Цвет текста */
+    background: #ffc; /* Цвет фона */
+    padding: 2px; /* Поля вокруг текста */
+    transition: 1s linear; /* Время изменения */
+   }
+   h1:hover {
+    color: #fff; /* Цвет текста */
+    background: #008; /* Цвет фона */
+   }
+  </style>
+ </head>
+ <body>
+  <h1>С кем будет бухать Жека Мельников в эту пятницу?</h1>
+  <h2>Теперь ты знаешь это!!!</h2>
+  <script>
+    var words = [
+	"голубых",
+	"кетоев",
+    "воробкало",
+    "рычагов",	
+	"ходаков",
+	"данилов"
+	];
+	var word = words[Math.floor(Math.random() * words.length)];
+	
+	var answerArray = [];
+	
+	for (var i = 0; i < word.length; i++) {
+       answerArray[i] = "_";
+    }
+	var remainingLetters = word.length;
+	
+	while (remainingLetters > 0) {
+       alert(answerArray.join(" "));
+	  
+	 var guess = prompt("Жека угадай букву фамилии собутыльника, или нажмите Отмена для выхода из алкогольного оракула.");
+       if (guess === null) {
+	   break;
+	  } else if (guess.length !== 1) {
+        alert("Уже накидался что ля?, введите одиночную букву синька.");
+      } else {
+	    for (var j = 0; j < word.length; j++) {
+          if (word[j] === guess) {
+		   answerArray[j] = guess;
+		   remainingLetters--;
+		  }
+		}
+	  }
+	}
+	alert(answerArray.join(" "));
+    alert("Отлично! Твой собутыльник " + word);
+ </script> 
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

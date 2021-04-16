@@ -1,0 +1,40 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Цвет ссылок</title>
+  <style>
+   a {
+    color: #008; /* Цвет текста */
+    background: #ffc; /* Цвет фона */
+    padding: 2px; /* Поля вокруг текста */
+    transition: 1s linear; /* Время изменения */
+   }
+   a:hover {
+    color: #fff; /* Цвет текста */
+    background: #008; /* Цвет фона */
+   }
+  </style>
+ </head>
+ <body>
+  <p>Для сборки <a href="megadroid.html">мегадроида</a> требуется
+  открыть коробку, достать мешочек с микросхемами и сложить их в нужном порядке,
+  пользуясь нашим подробным 8631-страничным
+  <a href="manual.html">руководством</a>.</p>
+  <script>
+    var randomBodyParts = ["глаз", "нос", "череп"];
+    var randomAdjectives = ["вонючая", "унылая", "дурацкая"];
+    var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+                       // Выбор случайной части тела из массива randomBodyParts:
+    var randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)];
+                      // Выбор случайного прилагательного из массива randomAdjectives:
+    var randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)];
+                      // Выбор случайного слова из массива randomWords:
+    var randomWord = randomWords[Math.floor(Math.random() * 5)];
+                      // Соединяем случайные строки в предложение:
+    var randomInsult = "У тебя " + randomBodyPart + " словно " + 
+        randomAdjective + " " + randomWord + "!!!";
+        console.log(randomInsult);
+        alert(randomInsult);
+  </script>
+ </body>
+</html>
