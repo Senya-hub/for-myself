@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Изучаем DOM</title>
+	</head>
+	<body>
+		<h1 id="heading">Привет, мир!</h1>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script>
+          let counter = 1;
+          let printMessage = function () {
+            console.log("Ты смотришь в консоль уже " + counter + " сек");
+            counter++;
+				if (counter > 10) {
+				  clearInterval(intervalId);
+				}
+          };
+		  
+          let intervalId = setInterval(printMessage, 1000);
+		  console.log("id= " + intervalId);  
+		  
+		  var leftOffset = 0;
+          var moveHeading = function () {
+          $("#heading").offset({ left: leftOffset });
+            leftOffset++;
+            if (leftOffset > 300) {
+		     leftOffset = 0;
+            }
+         };
+         setInterval(moveHeading, 5);  	
+        </script>
+	</body>
+</html>

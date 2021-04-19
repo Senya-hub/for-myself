@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Изучаем DOM</title>
+	</head>
+	<body>
+		<h1 id="heading">Привет, мир!</h1>
+		<h2>Лучший язык программирования JavaScript</h2>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script>
+		  //var clickHandler = function (event) {
+           // console.log("Клик! " + event.pageX + " " + event.pageY);
+         // };
+        //  $("h2").click(clickHandler);
+		
+          $("html").mousemove(function (event) {
+   		    $("#heading").offset({
+               left: event.pageX,
+               top: event.pageY
+            });
+         });
+		  
+		  
+</script>
+        </script>
+	</body>
+</html>
