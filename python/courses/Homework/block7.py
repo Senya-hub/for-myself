@@ -31,7 +31,7 @@ for number in range(21):
   print(summ)
 
   for number in range(1, 11):
-  summ = number ** 3
+   summ = number ** 3
   print(summ)
 #-----------------------------
 start_number = int(input('Введите первое число: '))

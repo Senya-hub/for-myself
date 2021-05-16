@@ -41,7 +41,7 @@ while True:
   force = float(input('Введите силу удара: '))
   force *= 10
   print('Балл: ', int(force))
-
+  break
 
 print('Задача 1. Космические рейнджеры\n')
 many = float(input('Сколько чатлов? '))
