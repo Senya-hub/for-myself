@@ -7,7 +7,7 @@ for number in numbers_list:
     print(number, '** 2 = ', number ** 2)
 
 
-# Регистрация книг
+#Регистрация книг
 books_ID = [50, 34, -1, -1, 2, 23, -1]
 new_books_ID =[]
 returned = 0
